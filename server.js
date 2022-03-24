@@ -26,8 +26,9 @@ app.get('/', function (req, res) {
             }
         });
     }
-
-    res.status(500).send();
+    else {
+        res.status(500).send();
+    }
 });
 
 app.use(function (req, res) {
